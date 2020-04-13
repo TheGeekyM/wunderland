@@ -1,6 +1,19 @@
 <?php
 
+namespace Buseet\Wunderland\Modules\Booking\Services;
 
+use Buseet\Wunderland\Modules\Booking\Dto\BookingDto;
+use Buseet\Wunderland\Modules\Booking\Dto\BookingResultsDto;
+use Buseet\Wunderland\Modules\Booking\Mappers\BookingToPricingCalculationDto;
+use Buseet\Wunderland\Modules\Booking\Mappers\PaymentResultsToBookingResultsDto;
+use Buseet\Wunderland\Modules\Payment\Dto\PayDto;
+use Buseet\Wunderland\Modules\Pricing\Services\PricingCalculationService;
+use PaymentService;
+
+/**
+ * Class BookingService
+ * @package Buseet\Wunderland\Modules\Booking\Services
+ */
 class BookingService
 {
     /**
@@ -22,6 +35,10 @@ class BookingService
     {
         $this->pricingCalculationService = $pricingCalculationService;
         $this->paymentService            = $paymentService;
+    }
+
+    public function createBookingIntent() {
+
     }
 
     /**

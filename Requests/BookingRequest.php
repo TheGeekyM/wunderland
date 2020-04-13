@@ -1,5 +1,12 @@
 <?php
 
+namespace Buseet\Wunderland\Requests;
+
+use Buseet\Wunderland\Contracts\RequestInterface;
+use Buseet\Wunderland\Mappers\BookingResponseMapper;
+use Buseet\Wunderland\Modules\Booking\Dto\BookingDto;
+use Buseet\Wunderland\Modules\Booking\Services\BookingService;
+use Buseet\Wunderland\Responses\BookingResponse;
 
 class BookingRequest implements RequestInterface
 {
@@ -39,9 +46,10 @@ class BookingRequest implements RequestInterface
         return $this;
     }
 
-    public function validate()
+    public function validate(): RequestInterface
     {
         // TODO: Implement validate() method.
+        return $this;
     }
 
     /**

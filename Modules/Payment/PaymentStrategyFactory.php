@@ -1,5 +1,9 @@
 <?php
 
+namespace Buseet\Wunderland\Modules\Payment;
+
+use Buseet\Wunderland\Modules\Payment\Contracts\PaymentStrategyInterface;
+use Buseet\Wunderland\Modules\Payment\Paymob\PaymobPaymentStrategy;
 
 class PaymentStrategyFactory
 {
@@ -9,5 +13,6 @@ class PaymentStrategyFactory
             return new PaymobPaymentStrategy();
         }
 
+        return null;
     }
 }

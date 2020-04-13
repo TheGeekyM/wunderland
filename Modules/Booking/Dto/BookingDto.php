@@ -1,5 +1,8 @@
 <?php
 
+namespace Buseet\Wunderland\Modules\Booking\Dto;
+
+use Buseet\Wunderland\Modules\Orders\Models\Seat;
 
 class BookingDto
 {

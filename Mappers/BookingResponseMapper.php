@@ -1,5 +1,9 @@
 <?php
 
+namespace Buseet\Wunderland\Mappers;
+
+use Buseet\Wunderland\Modules\Booking\Dto\BookingResultsDto;
+use Buseet\Wunderland\Responses\BookingResponse;
 
 class BookingResponseMapper
 {

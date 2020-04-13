@@ -1,5 +1,9 @@
 <?php
 
+namespace Buseet\Wunderland\Modules\Pricing\Services;
+
+use Buseet\Wunderland\Modules\Pricing\Dto\PricingCalculationDto;
+use Buseet\Wunderland\Modules\Pricing\Dto\PricingCalculationResultsDto;
 
 class PricingCalculationService
 {
