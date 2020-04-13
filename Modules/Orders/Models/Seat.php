@@ -1,5 +1,6 @@
 <?php
 
+namespace Buseet\Wunderland\Modules\Orders\Models;
 
 class Seat
 {
@@ -10,6 +11,6 @@ class Seat
 
     public function isPremium(): bool
     {
-
+        return false;
     }
 }

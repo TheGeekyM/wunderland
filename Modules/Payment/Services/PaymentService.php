@@ -1,6 +1,10 @@
 <?php
 
 
+use Buseet\Wunderland\Modules\Payment\Dto\CaptureMoney;
+use Buseet\Wunderland\Modules\Payment\Dto\PayDto;
+use Buseet\Wunderland\Modules\Payment\PaymentStrategyFactory;
+
 class PaymentService
 {
     /**

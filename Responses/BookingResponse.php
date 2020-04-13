@@ -1,5 +1,6 @@
 <?php
 
+namespace Buseet\Wunderland\Responses;
 
 class BookingResponse
 {
