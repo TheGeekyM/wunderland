@@ -13,7 +13,7 @@
         "doctrine/cache": "^1.10"
     },
     "autoload": {
-        "psr-4": { "Buseet\\Wunderland\\": "" },
+        "psr-4": { "Buseet\\Wunderland\\": "src/" },
         "exclude-from-classmap": [
             "/Tests/"
         ]
