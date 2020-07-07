@@ -8,6 +8,13 @@ as a multi-stage process.
 Wunderland will contain all the logic needed
 
 
+You can install the package via composer:
+
+``` bash
+composer require buseet/wunderland
+```
+
+
 ## Architecture
 Currently Wunderland follows hexagonal architecture. Meaning that if it needs to communicate
 with any other external dependency(eg: database) it will define interfaces for it and the 
