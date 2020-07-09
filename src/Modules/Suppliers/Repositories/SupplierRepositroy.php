@@ -4,22 +4,19 @@ namespace Buseet\Wunderland\Modules\Suppliers\Repositories;
 use Doctrine\DBAL\Driver\IBMDB2\DB2Connection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Buseet\Wunderland\Modules\Suppliers\Models\Supplier;
+use Buseet\Wunderland\Core\Repository;
 
-class SupplierRepositroy
+/**
+ * Class SupplierRepositroy
+ *
+ * @package Buseet\Wunderland\Modules\Suppliers\Repositories
+ *
+ */
+class SupplierRepositroy extends Repository
 {
-    private $model;
-
     /**
-     * SupplierRepositroy constructor.
-     *
-     * @param Model $model
+     * @var string 
      */
-    public function __construct(Model $model) {
-        $this->model = $model;
-    }
-
-    public function getALl()
-    {
-        return $this->model;
-    }
+    protected $model = Supplier::class;
 }
