@@ -99,4 +99,25 @@ class Repository implements RepositoryInterface
     {
         $this->model->destroy($id);
     }
+
+    /**
+     * @param Model $model
+     *
+     * @return mixed
+     */
+    public function size(Model $model)
+    {
+        return $model->count();
+    }
+
+    /**
+     * @param $value
+     * @param string $key
+     *
+     * @return mixed
+     */
+    public function pluck($value, $key = 'id')
+    {
+        return $this->model->pluck($value, $key);
+    }
 }

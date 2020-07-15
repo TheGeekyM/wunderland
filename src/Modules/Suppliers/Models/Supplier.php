@@ -4,6 +4,7 @@ namespace Buseet\Wunderland\Modules\Suppliers\Models;
 
 use App\Entity\Admin;
 use App\Entity\Role;
+use App\Models\Bus;
 use App\ValueObjects\EmailAddress;
 use Carbon\Carbon;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -82,5 +83,13 @@ class Supplier extends Model
     public function getCreatedAtAgo(): string
     {
         return Carbon::instance($this->getCreatedAt())->diffForHumans();
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function buses()
+    {
+        return $this->hasMany(Bus::class);
     }
 }

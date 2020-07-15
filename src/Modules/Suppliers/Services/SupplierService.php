@@ -49,6 +49,17 @@ class SupplierService
     }
 
     /**
+     * @param $value
+     * @param string $key
+     *
+     * @return mixed
+     */
+    public function pluck($value , $key = 'id')
+    {
+        return $this->supplierRepositroy->pluck($value , $key);
+    }
+
+    /**
      * @return SupplierResponse
      */
     public function addNewSupplier(SupplierRequestDTO $Supplierrequest)
