@@ -1,6 +1,6 @@
 <?php
 
-namespace Wunderland\Contract\Repositories;
+namespace Buseet\Wunderland\Contracts\Repositories;
 
 interface BusRepositoryInterface
 {
