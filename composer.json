@@ -14,8 +14,7 @@
     "require": {
         "symfony/validator": "^5.0",
         "doctrine/annotations": "^1.10",
-        "doctrine/cache": "^1.10",
-        "buseet/wunderland": "dev-master"
+        "doctrine/cache": "^1.10"
     },
     "autoload": {
         "psr-4": { "Buseet\\Wunderland\\": "src/" },
